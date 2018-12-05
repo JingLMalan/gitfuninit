@@ -1,0 +1,8 @@
+{
+  "name": "gitfuninit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/JingLMalan/gitfuninit.git",
+  "author": "jing.l.mlana <jing.l.malan@gmail.com>",
+  "license": "MIT"
+}
