@@ -4,8 +4,8 @@ const figlet = require('figlet');
 const files = require('./lib/files');
 const inquirer  = require('./lib/inquirer');
 const Configstore = require('configstore');
-const CLI         = require('clui');
-const Spinner     = CLI.Spinner;
+const CLI = require('clui');
+const Spinner = CLI.Spinner;
 
 clear();
 
