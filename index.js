@@ -4,6 +4,8 @@ const figlet = require('figlet');
 const files = require('./lib/files');
 const inquirer  = require('./lib/inquirer');
 const Configstore = require('configstore');
+const CLI         = require('clui');
+const Spinner     = CLI.Spinner;
 
 clear();
 
@@ -13,7 +15,7 @@ console.log(
   )
 );
 
-console.log(`\n\n正在加载....\n\n`);
+console.log(`\n正在加载....\n`);
 
 
 // if (files.directoryExists('.git')) {
@@ -23,9 +25,11 @@ console.log(`\n\n正在加载....\n\n`);
 
 const run = async () => {
   const credentials = await inquirer.askGithubCredentials();
-  console.log(credentials);
+  const status = new Spinner('认证正在进行中，请稍后...');
+  status.start();
+  
 }
 
 run();
 
-const conf = new Configstore('ginit');
+// const conf = new Configstore('ginit');
