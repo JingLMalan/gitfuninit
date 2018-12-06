@@ -43,10 +43,10 @@ const run = async () => {
       if (err) {
         switch (err.code) {
           case 401:
-            console.log(chalk.red('Couldn\'t log you in. Please provide correct credentials/token.'));
+            console.log(chalk.red('登陆失败，请提供正确的资格认证token'));
             break;
           case 422:
-            console.log(chalk.red('There already exists a remote repository with the same name'));
+            console.log(chalk.red('非常抱歉，已经存在同名的仓库了，根据规定，仓库名称不允许同名'));
             break;
           default:
             console.log(err);
