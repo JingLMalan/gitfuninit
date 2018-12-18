@@ -37,3 +37,9 @@ npm-debug.log</pre>
 【查看镜像】
 
 <code>docker images</code>
+
+【运行镜像】
+<code>$ docker run -p 49160:8080 -d <your username>/node-web-app</code>
+
+Tip: -d 表示在容器中运行分离模式，这样可以让容器在后台运行
+     -p 表示外部端口到容器内部端口的映射
